@@ -1,0 +1,8 @@
+<scroll-view class='detail-contain'> 
+<view class='detail-title'>
+HTML语义化的理解
+</view>
+<view class='detail-content'>
+什么是语义化？
+</view>
+</scroll-view>

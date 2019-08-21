@@ -1,0 +1,14 @@
+.detail-contain{
+  width: 100vw;
+  height: 100vh;
+}
+.detail-title{
+  color: 36rpx;
+  font-weight: bold;
+  padding: 20rpx;
+}
+.detail-content{
+  font-size: 28rpx;
+  color: #333;
+  padding: 20rpx;
+}

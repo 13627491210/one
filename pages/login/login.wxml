@@ -1,0 +1,4 @@
+<view class="login-contain" hover-class="none" hover-stop-propagation="false">
+    <view class="login-content">啊啊啊</view>
+</view>
+  

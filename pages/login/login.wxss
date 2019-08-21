@@ -1,0 +1,15 @@
+.login-contain{
+    background: #aaa;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%
+    
+}
+.login-content{
+    width: 640rpx;
+    height: 760rpx;
+    background: #fff;
+    margin-top: 169rpx;
+    border-radius: 5rpx;
+}
