@@ -1,10 +1,17 @@
 <view class="home-contain" hover-class="none" hover-stop-propagation="false">
   
 <view class="nav-tabs">
+<view class='nav-tabs-currentMonth'>2019-08-07</view>
   <view class="tab-list  {{currentTab == idx?'active':'default'}}" wx:for="{{tabArray}}" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">{{item.title}}</view>
-<swiper current="{{currentTab}}" class="tab-content" duration="300" bindchange="bindChange">
+
+  </view>
+  <swiper current="{{currentTab}}" class="tab-content" duration="300" bindchange="bindChange">
   <swiper-item wx:for="{{tabArray}}"  wx:for-item="item"   wx:for-index="idx" class="order-contain">
+
+  <view class='home-content'>
+  内容
+  </view>
   </swiper-item>
  </swiper>
-  </view>
+ <view class='home-fixedBtn'>...</view>
 </view>

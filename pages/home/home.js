@@ -7,12 +7,18 @@ Page({
   data: {
     currentTab: 0,
     tabArray: [{
-      title: "最新",
+      title: "视",
       content: []
     }, {
-      title: "最热",
+      title: "乐",
       content: []
-    }],
+      }, {
+        title: "文",
+        content: []
+      }, {
+        title: "句",
+        content: []
+      }],
     classifys: [{
       name: '全部',
       checked: true

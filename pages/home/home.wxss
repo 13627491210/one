@@ -1,6 +1,6 @@
 .home-contain{  
   height: 128rpx;
-  background-color: #5ac54d;
+  background-color: #fff;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -15,21 +15,51 @@
   top: 50rpx;
   z-index: 2;
 } 
+.nav-tabs-currentMonth{
+  font-size: 28rpx;
+  display: flex;
+  align-items:center;
+  margin-top: 10rpx;
+  margin-right: 80rpx;
+  margin-left: 20rpx;
+
+  
+}
 .tab-content {
-  flex: 1;
+  /* flex: 1; */
+  width: 100vw;
+  height: 100vh
 }
 .active {
-  width: 100rpx;
+  width: 60rpx;
   line-height: 80rpx;
   text-align: center;
-  color: #0091ff;
-  border-bottom: 2px solid #0091ff;
+  color: #999;
+  border-bottom: 2px solid #999;
   font-size: 28rpx;
 }
 .default{
-  width: 100rpx;
+  width: 60rpx;
   line-height: 80rpx;
   text-align: center;
-  color: #fff;
+  color: #666;
   font-size: 28rpx;
+}
+.home-content{
+  width: 100vw;
+  height: 100vh;
+  margin-top: 128rpx;
+}
+.home-fixedBtn{
+  position:fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+  border:2rpx solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  box-shadow: 0 0px  20px 2px rgba(0, 0, 0, 0.1);
 }
