@@ -1,7 +1,7 @@
 <view class="home-contain" hover-class="none" hover-stop-propagation="false">
   
 <view class="nav-tabs">
-<view class='nav-tabs-currentMonth'>2019-08-07</view>
+<view class='nav-tabs-currentMonth' bindtap='onOpenDate'>2019-08-07</view>
   <view class="tab-list  {{currentTab == idx?'active':'default'}}" wx:for="{{tabArray}}" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">{{item.title}}</view>
 
   </view>
@@ -9,9 +9,40 @@
   <swiper-item wx:for="{{tabArray}}"  wx:for-item="item"   wx:for-index="idx" class="order-contain">
 
   <view class='home-content'>
-  内容
+  <view class='home-content-poem'>
+   <view> 有时候我希望你的一生，</view>
+   <view> 能被拍成一部漫长的电影。</view>
+   <view> 然后我比你晚出生一百年，</view>
+   <view> 一辈子只做一件事。</view>
+   <view> 对着墙上的荧幕光影，</view>
+   <view> 用我的一生，</view>
+   <view> 把你的一生慢慢看完。</view>
+  </view>
+  <view class='home-content-poems'>《见素》</view>
+  <view class='home-content-author'>——李青</view>
   </view>
   </swiper-item>
  </swiper>
- <view class='home-fixedBtn'>...</view>
+ <view class='home-fixedBtn' bindtap='onOpenMine'>{{shrink?'...':'X'}}</view>
+ <view class='mine' style="right:{{shrink?'-100vw':'0px'}}">
+ <view class='mine-title'>
+<view class='mine-icon'></view>  
+<view class='mine-description'>回归简一，勿忘初心。</view>
+ </view>
+ <view class='mine-line'></view>
+ <view class='mine-content'>
+  <view class='mine-content-card'>
+  </view>
+   <view class='mine-content-card'>
+  </view>
+   <view class='mine-content-card'>
+  </view>
+   <view class='mine-content-card'>
+  </view>
+ </view>
+ </view>
+
+  <view class='selectDate' style="left:{{dateShrink?'-100vw':'0px'}}">
+  
+ </view>
 </view>

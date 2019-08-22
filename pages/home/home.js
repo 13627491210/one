@@ -6,6 +6,8 @@ Page({
    */
   data: {
     currentTab: 0,
+    shrink:true,
+    dateShrink:true,
     tabArray: [{
       title: "视",
       content: []
@@ -77,7 +79,17 @@ Page({
       classifys: data
     })
   },
-
+  onOpenMine:function(e){
+    this.setData({
+      shrink: !this.data.shrink
+    })
+  },
+  onOpenDate: function (e) {
+    this.setData({
+      dateShrink: !this.data.dateShrink
+    })
+  },
+  
   bindChange: function(e) {
     var that = this;
     that.setData({
